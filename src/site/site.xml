@@ -1,0 +1,12 @@
+<project name="KonfigU7 Documentation">
+    <publishDate position="right"/>
+    <version position="left"/>
+    <body>
+        <menu name="Overview">
+            <item name="Introduction" href="index.html"/>
+            <item name="Member 1" href="member1.html"/>
+            <item name="Member 2" href="member2.html"/>
+        </menu>
+        <menu ref="reports"/>
+    </body>
+</project>
