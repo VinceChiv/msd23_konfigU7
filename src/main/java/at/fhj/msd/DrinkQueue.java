@@ -4,13 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * GITTeamWork
- * <Description>
- * Author: Matio
- * Last Change: 02.07.2024
+ * Class that administers methods via Interface <b>IQueue</b> which adds or removes drinks to the
+ * list
  */
 public class DrinkQueue implements IQueue {
+    /**
+     * List of drinks
+     */
     private final List<Drink> elements = new ArrayList<Drink>();
+
+    /**
+     * Amount of possible drinks
+     */
     private int maxSize = 5;
 
     /**
@@ -21,7 +26,13 @@ public class DrinkQueue implements IQueue {
         this.maxSize = maxSize;
     }
 
-
+    /**
+     * Adds a string element to the queue
+     * !! DEPECRATED BUT NEEDED TO MAINTAIN INTERFACE FUNCTIONALITY !!
+     *
+     * @param obj the element to be added
+     * @return true if the element was added, otherwise false
+     */
     @Override
     public boolean offer(String obj) {
         return false;
@@ -29,7 +40,8 @@ public class DrinkQueue implements IQueue {
 
     /**
      * Adds a drink to the queue
-     * @param obj the drink to add
+     * @param obj the drink to be added
+     * @return true if the drink was added, false if not
      */
     @Override
     public boolean offer(Drink obj) {
