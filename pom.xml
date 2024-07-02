@@ -10,7 +10,7 @@
             <id>matiotawdrous</id>
             <name>Matio Tawdrous</name>
             <email>matio.tawdrous@edu.fh-joanneum.at</email>
-            <url>https://github.com/Matostruct/KonfigU7</url>
+            <url>https://github.com/VinceChiv/msd23_konfigU7</url>
             <organization>FH JOANNEUM GmbH</organization>
             <organizationUrl>https://www.fh-joanneum.at</organizationUrl>
             <roles>
@@ -20,6 +20,18 @@
             <properties>
                 <picUrl>https://avatars.githubusercontent.com/u/56159495?v=4</picUrl>
             </properties>
+        </developer>
+        <developer>
+            <id>VinceChiv</id>
+            <name>Vincent Bloomfield</name>
+            <email>vincent.bloomfield@edu.fh-joanneum.at</email>
+            <url>https://github.com/VinceChiv/msd23_konfigU7</url>
+            <organization>FH JOANNEUM GmbH</organization>
+            <organizationUrl>https://www.fh-joanneum.at</organizationUrl>
+            <roles>
+                <role>Student Developer</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
         </developer>
     </developers>
 
