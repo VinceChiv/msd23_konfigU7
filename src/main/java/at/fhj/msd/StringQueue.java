@@ -31,31 +31,42 @@ public class StringQueue implements IQueue {
   public String poll() {
     String element = peek();
 
-    if (elements.size() == 0) {
-      elements.remove(0);
+    if(element == null)
+    {
+      return null;
     }
-
-    return element;
+    else
+    {
+      elements.remove(0);
+      return element;
+    }
   }
 
   @Override
   public String remove() {
-    String element = poll();
-    element = "";
+    String element = peek();
     if (element == null)
+    {
       throw new NoSuchElementException("there's no element any more");
-
-    return element;
+    }
+    else
+    {
+      elements.remove(0);
+      return element;
+    }
   }
 
   @Override
   public String peek() {
     String element;
     if (elements.size() > 0)
+    {
       element = elements.get(0);
+    }
     else
+    {
       element = null;
-
+    }
     return element;
   }
 
@@ -63,9 +74,11 @@ public class StringQueue implements IQueue {
   public String element() {
     String element = peek();
     if (element == null)
+    {
       throw new NoSuchElementException("there's no element any more");
+    }
 
     return element;
   }
 
-}s
+}
