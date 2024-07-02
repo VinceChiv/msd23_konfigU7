@@ -15,7 +15,7 @@ public interface IQueue {
    * 
    * */
   boolean offer(String obj);
-
+  boolean offer(Drink obj);
   //returns + del 1st element; null if nothing in there
    //
   String poll();
