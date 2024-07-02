@@ -4,19 +4,35 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-// there's some Bugs included, try to debug the code and fix the Bugs
-// there are different Bugs, wrong implementation, typos, ...
-// write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
-
+/**
+ * Class that administers methods via Interface <b>IQueue</b> which adds or removes string elements to the
+ * list.
+ */
 public class StringQueue implements IQueue {
 
+  /**
+   * List of string elements
+   */
   private final List<String> elements = new ArrayList<String>();
+
+  /**
+   * Amount of possible elements
+   */
   private int maxSize = 5;
 
-  public StringQueue(int maxsize) {
+  /**
+   * Constructor
+   * @param maxSize maximum size of the queue
+   */
+  public StringQueue(int maxSize) {
     maxSize = maxSize;
   }
 
+  /**
+   * Adds an element to the queue
+   * @param obj the element to be added
+   * @return true if the element was added, false if not
+   */
   @Override
   public boolean offer(String obj) {
     if (elements.size() != maxSize)
@@ -27,11 +43,23 @@ public class StringQueue implements IQueue {
     return true;
   }
 
+  /**
+   * Adds a drink to the queue
+   * !! DEPECRATED BUT NEEDED TO MAINTAIN INTERFACE FUNCTIONALITY !!
+   *
+   * @param obj the drink to be added
+   * @return true if the drink was added, otherwise false
+   */
   @Override
   public boolean offer(Drink obj) {
     return false;
   }
 
+  /**
+   * Returns and removes the first element of the queue
+   *
+   * @return the first element of the queue
+   */
   @Override
   public String poll() {
     String element = peek();
@@ -47,6 +75,11 @@ public class StringQueue implements IQueue {
     }
   }
 
+  /**
+   * Returns and removes the first element of the queue
+   *
+   * @return the first element of the queue
+   */
   @Override
   public String remove() {
     String element = peek();
@@ -61,6 +94,11 @@ public class StringQueue implements IQueue {
     }
   }
 
+  /**
+   * Returns the first element of the queue
+   *
+   * @return the first element of the queue
+   */
   @Override
   public String peek() {
     String element;
@@ -75,6 +113,11 @@ public class StringQueue implements IQueue {
     return element;
   }
 
+  /**
+   * Returns the first element of the queue
+   *
+   * @return the first element of the queue
+   */
   @Override
   public String element() {
     String element = peek();
