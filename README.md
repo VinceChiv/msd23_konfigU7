@@ -15,9 +15,9 @@ Aus dem zip Ordner die Datein im **neuen** Projektordner kopieren.
 - [ ] Branches completed
   - [x] maven (Matio)
   - [x] readme (Vincent)
-  - [ ] maven_detail
-  - [ ] bug_hunt
-  - [ ] drink
+  - [x] maven_detail
+  - [x] bug_hunt (Vincent)
+  - [x] drink (Matio)
   - [ ] queue
   - [ ] javadoc
   - [ ] tests
