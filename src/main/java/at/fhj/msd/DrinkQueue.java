@@ -56,4 +56,51 @@ public class DrinkQueue implements IQueue {
 
         return element;
     }
+    /**
+     * Returns and removes the first drink of the queue
+     *
+     * @return the first drink of the queue
+     */
+    @Override
+    public String remove() {
+        String element = poll();
+
+        if (element == null) {
+            throw new java.util.NoSuchElementException("there's no element any more");
+        }
+
+        return element;
+    }
+
+    /**
+     * Returns the first drink of the queue
+     *
+     * @return the first drink of the queue
+     */
+    @Override
+    public String peek() {
+        String element;
+        if (elements.size() > 0) {
+            element = elements.get(0).toString();
+        } else {
+            element = null;
+        }
+
+        return element;
+    }
+
+    /**
+     * Returns the first drink of the queue
+     *
+     * @return the first drink of the queue
+     */
+    @Override
+    public String element() {
+        String element = peek();
+        if (element == null) {
+            throw new java.util.NoSuchElementException("there's no element any more");
+        }
+
+        return element;
+    }
 }

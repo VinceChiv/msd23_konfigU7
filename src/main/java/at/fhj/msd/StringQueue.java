@@ -28,6 +28,11 @@ public class StringQueue implements IQueue {
   }
 
   @Override
+  public boolean offer(Drink obj) {
+    return false;
+  }
+
+  @Override
   public String poll() {
     String element = peek();
 
